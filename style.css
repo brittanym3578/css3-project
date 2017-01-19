@@ -1,0 +1,11 @@
+#background { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://t3.ftcdn.net/jpg/01/00/42/14/160_F_100421447_YyWKbusj1oksyen2msgdEtmbirtI0lhO.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
