@@ -1,13 +1,13 @@
 h1 {
    background:black;
-   background:radial-gradient(circle,white,gray,black);
+   background:radial-gradient(circle,white,gray,black);/*color starts at center and change to different colors*/
    text-align:center;
    padding: 15px;
    font-family: 'Dancing Script', cursive;
-   transition: transform 2s;
+   transition: transform 2s;/*allows the rotation to work*/
 }
 h1:hover {
-    /*make the pic rotate 360 degrees*/
+    /*make the picture rotate 360 degrees*/
     transform: rotateY(360deg);
 } 
 #romeo{
@@ -15,7 +15,7 @@ h1:hover {
     padding-right: 100px;
     padding-right: 100px;
     background:white;
-    background:radial-gradient(circle,white,lightblue,black);
+    background:radial-gradient(circle,white,lightblue,black);/*color starts at center and change to different colors*/
     border-radius: 50px; /*create rounded borders*/
     position: relative;
     right: -1700px;/*starting point*/
@@ -26,7 +26,7 @@ h1:hover {
    box-shadow: 5px 5px 5px white; /*horizontal and vertical shadow=5px, blur radius=5x, color=white */ 
 }
 
-@keyframes slide-left {/*ending point*/
+@keyframes slide-left {/*this is the ending point*/
     100% { right: 0px; }
 }
 
@@ -34,28 +34,29 @@ h1:hover {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   animation-name: color;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  background: radial-gradient(#99ff99,silver,#e6e6fa); /*color starts at center and change to different colors*/
+  animation-duration: 4s;/*Makes the animation complete in four seconds*/
+  animation-iteration-count: infinite; /*allows the color changing effect to work continusly*/
+  background: radial-gradient(#99ff99,silver,#e6e6fa); /*color starts at the center and change to different colors*/
     border-radius: 50px; /*this creates rounded borders*/
     box-shadow: 5px 5px 5px white; /*horizontal and vertical shadow=5px, blur radius=5x, color=beige */
 }
+/*These are the colors that are shown every time it changes*/
  @keyframes color {
-       0%  {color: #0000ff;}
-      25%  {color: #A52A2A;}
-      50%  {color: #ff8080;}
-    100% {color: #9932CC;}
+       0%  {color: #0000ff;}/*makes the first color be blue for the 1st second*/
+      25%  {color: #A52A2A;}/*makes the sexond color be brown for the 2nd second*/
+      50%  {color: #ff8080;}/*makes the third color be pink for the 3rd second*/
+    100% {color: #9932CC;}/*makes the last color be purple for the 4th second*/
 }
 #crown {
     float: right;
     margin-top: 20px;
-    transition: transform 2s;
+    transition: transform 2s;/*allow the rotation to work*/
    
 }
 #crown:hover {
-    /*make the pic rotate 360 degrees*/
+    /*makes the pic rotate 360 degrees*/
     transform: rotateY(360deg);
 } 
 body {
-   background: linear-gradient(to bottom right, lightblue, turquoise);
+   background: linear-gradient(to bottom right, lightblue, turquoise); /*a transition from light blue to turquoise going towards the bottom*/
 }
