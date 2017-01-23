@@ -1,19 +1,61 @@
-#background { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('http://artesanato.culturamix.com/blog/wp-content/gallery/tecnicas-para-envelhecer-papel-6/T%C3%A9cnicas-Para-Envelhecer-Papel-18.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    opacity:0.5;
-}
 h1 {
    background:black;
    background:radial-gradient(circle,white,gray,black);
    text-align:center;
    padding: 15px;
    font-family: 'Dancing Script', cursive;
+   transition: transform 2s;
+}
+h1:hover {
+    /*make the pic rotate 360 degrees*/
+    transform: rotateY(360deg);
+} 
+#romeo{
+    float: center;
+    padding-right: 100px;
+    padding-right: 100px;
+    background:white;
+    background:radial-gradient(circle,white,lightblue,black);
+    border-radius: 50px; /*create rounded borders*/
+    position: relative;
+    right: -1700px;/*starting point*/
+    width: 930px;
+    height: 400px;
+    animation: slide-left 1s ease 2s; /*animation name= to slide-left, the duration= 1s, timing function at default, delay= for 2s */
+    animation-fill-mode: forwards;/*make animation stay after shifting left*/
+   box-shadow: 5px 5px 5px white; /*horizontal and vertical shadow=5px, blur radius=5x, color=white */ 
+}
+
+@keyframes slide-left {/*ending point*/
+    100% { right: 0px; }
+}
+
+.paragraph {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  animation-name: color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background: radial-gradient(#99ff99,silver,#e6e6fa); /*color starts at center and change to different colors*/
+    border-radius: 50px; /*this creates rounded borders*/
+    box-shadow: 5px 5px 5px white; /*horizontal and vertical shadow=5px, blur radius=5x, color=beige */
+}
+ @keyframes color {
+       0%  {color: #0000ff;}
+      25%  {color: #A52A2A;}
+      50%  {color: #ff8080;}
+    100% {color: #9932CC;}
+}
+#crown {
+    float: right;
+    margin-top: 20px;
+    transition: transform 2s;
+   
+}
+#crown:hover {
+    /*make the pic rotate 360 degrees*/
+    transform: rotateY(360deg);
+} 
+body {
+   background: linear-gradient(to bottom right, lightblue, turquoise);
 }
